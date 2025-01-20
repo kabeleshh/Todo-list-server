@@ -10,7 +10,7 @@ public class config implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/api/**")
-        .allowedOrigins("https://todo-list-client-two.vercel.app")
+        .allowedOrigins("https://todo-list-client-two.vercel.app/")
         .allowedMethods("GET","POST","PATCH","DELETE")
         .allowedHeaders("*")
         .allowCredentials(true);
